@@ -2029,3 +2029,244 @@ footer {
     font-size: 0.95rem;
   }
 }
+/* ===== FAQ SAYFA STİLLERİ ===== */
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-category {
+  margin-bottom: 3rem;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  border: 1px solid #e5e7eb;
+}
+
+.faq-category h2 {
+  color: #2f2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #b9975b;
+}
+
+.faq-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.faq-item h3 {
+  color: #2f2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.faq-item p {
+  color: #2f2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.faq-item ul {
+  color: #2f2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.faq-item li {
+  margin-bottom: 0.5rem;
+}
+
+.faq-item strong {
+  color: #1f2937;
+  font-weight: 700;
+}
+
+.contact-cta {
+  background: linear-gradient(135deg, #2f2f2f 0%, #1f1f1f 100%);
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin-top: 3rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.contact-cta h2 {
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contact-cta p {
+  color: #e5e7eb;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #b9975b;
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  min-height: 48px;
+  line-height: 20px;
+}
+
+.cta-button:hover {
+  background: #a08649;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(185, 151, 91, 0.3);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive tasarım - FAQ sayfası */
+@media (max-width: 768px) {
+  .faq-category {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .faq-category h2 {
+    font-size: 1.5rem;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.2rem;
+  }
+  
+  .faq-item p,
+  .faq-item ul {
+    font-size: 1rem;
+  }
+  
+  .contact-cta {
+    padding: 2rem 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .contact-cta h2 {
+    font-size: 1.5rem;
+  }
+  
+  .contact-cta p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-category {
+    padding: 1rem;
+  }
+  
+  .faq-category h2 {
+    font-size: 1.4rem;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.1rem;
+  }
+  
+  .faq-item p,
+  .faq-item ul {
+    font-size: 0.95rem;
+  }
+  
+  .contact-cta {
+    padding: 1.5rem 1rem;
+  }
+  
+  .contact-cta h2 {
+    font-size: 1.4rem;
+  }
+  
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
+/* ===== EK SEO İÇERİĞİ STİLLERİ ===== */
+.seo-content {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.seo-content h3 {
+  color: #2f2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.seo-content p {
+  color: #2f2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.seo-content ul {
+  color: #2f2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.seo-content li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .seo-content h3 {
+    font-size: 1.2rem;
+  }
+  
+  .seo-content p,
+  .seo-content ul {
+    font-size: 0.95rem;
+  }
+}
