@@ -728,27 +728,37 @@ footer {
 /* ===== PETITIONS LISTING (ÖRNEK DİLEKÇELER) ===== */
 .petitions-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
   margin: 2rem 0 3rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .petition-card {
   background: #ffffff;
   border: 1px solid #e5e7eb;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
   display: flex;
-  align-items: stretch;
-  gap: 0;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.petition-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.15);
 }
 
 .petition-icon {
-  width: 110px;
-  min-height: 110px;
-  background: #f6f6f6;
+  width: 100%;
+  height: 200px;
+  background: #f8f9fa;
   flex-shrink: 0;
+  overflow: hidden;
 }
 
 .petition-icon img {
@@ -756,53 +766,101 @@ footer {
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.petition-card:hover .petition-icon img {
+  transform: scale(1.05);
 }
 
 .petition-content {
-  padding: 14px 16px;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .petition-content h3 {
-  margin: 0 0 8px 0;
-  font-size: 1.05rem;
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
   color: #2f2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  line-height: 1.3;
 }
 
 .petition-content p {
-  margin: 0 0 12px 0;
-  color: #2f2f2f;
+  margin: 0 0 1.5rem 0;
+  color: #4b5563;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  line-height: 1.6;
   text-align: justify;
+  flex-grow: 1;
 }
 
 .download-btn {
   align-self: flex-start;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   color: #ffffff;
-  background: #000000;
-  padding: 8px 14px;
-  border-radius: 6px;
+  background: linear-gradient(135deg, #2f2f2f 0%, #1f1f1f 100%);
+  padding: 12px 24px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
-  min-height: 44px;
-  line-height: 28px;
-  transition: background 0.2s ease;
+  min-height: 48px;
+  line-height: 24px;
+  box-shadow: 0 2px 8px rgba(47, 47, 47, 0.2);
 }
 
 .download-btn:hover {
-  background: #000080;
+  background: linear-gradient(135deg, #1f1f1f 0%, #0f0f0f 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(47, 47, 47, 0.3);
 }
 
 .download-btn:active {
-  transform: scale(0.98);
+  transform: translateY(0);
+}
+
+.download-btn::before {
+  content: "📄";
+  font-size: 1.1rem;
 }
 
 @media (max-width: 600px) {
-  .article-image { height: 140px; }
-  .petition-icon { width: 90px; min-height: 90px; }
+  .petitions-grid { 
+    grid-template-columns: 1fr; 
+    gap: 1.5rem;
+    margin: 1.5rem 0 2rem;
+  }
+  
+  .petition-icon { 
+    height: 180px; 
+  }
+  
+  .petition-content {
+    padding: 1.2rem;
+  }
+  
+  .petition-content h3 {
+    font-size: 1.2rem;
+  }
+  
+  .petition-content p {
+    font-size: 0.95rem;
+  }
+  
+  .download-btn {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
 }
 
 /* ===== FOOTER SOCIAL ICONS ===== */
@@ -1866,6 +1924,17 @@ footer {
   align-items: center;
 }
 
+.article-meta .author {
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.article-meta .author::before {
+  content: "✍️";
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
 .article-image-hero {
   width: 100%;
   height: 300px;
@@ -2328,5 +2397,38 @@ footer {
   
   .info-box p {
     font-size: 0.9rem;
+  }
+}
+/* ===== DİLEKÇE META BİLGİLERİ ===== */
+.petition-meta {
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.petition-meta .author {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.petition-meta .author::before {
+  content: "✍️";
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Responsive tasarım - Petition meta */
+@media (max-width: 768px) {
+  .petition-meta {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .petition-meta {
+    font-size: 0.8rem;
   }
 }
