@@ -2270,3 +2270,63 @@ footer {
     font-size: 0.95rem;
   }
 }
+/* ===== BİLGİ KUTUSU STİLLERİ ===== */
+.info-box {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+  border: 1px solid #ffeaa7;
+  border-left: 4px solid #f39c12;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 2px 8px rgba(243, 156, 18, 0.1);
+}
+
+.info-box h3 {
+  color: #d68910;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-box p {
+  color: #856404;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Responsive tasarım - Bilgi kutusu */
+@media (max-width: 768px) {
+  .info-box {
+    padding: 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .info-box h3 {
+    font-size: 1.1rem;
+  }
+  
+  .info-box p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-box {
+    padding: 0.8rem;
+  }
+  
+  .info-box h3 {
+    font-size: 1rem;
+  }
+  
+  .info-box p {
+    font-size: 0.9rem;
+  }
+}
