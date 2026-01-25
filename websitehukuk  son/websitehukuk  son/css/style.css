@@ -2432,3 +2432,442 @@ footer {
     font-size: 0.8rem;
   }
 }
+/* ===== ACCORDION STİLLERİ (MAKALELER) ===== */
+.articles-accordion {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+.accordion-item:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.accordion-header {
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  background: #ffffff;
+  border: none;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.accordion-header:hover {
+  background: #f8f9fa;
+}
+
+.accordion-header.active {
+  background: #f1f5f9;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.accordion-header h2 {
+  color: #2f2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3;
+  flex: 1;
+}
+
+.accordion-header .article-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0.5rem 0 0 0;
+  flex-shrink: 0;
+}
+
+.accordion-header .article-meta span {
+  display: flex;
+  align-items: center;
+}
+
+.accordion-header .article-meta .author {
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.accordion-header .article-meta .author::before {
+  content: "✍️";
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.accordion-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #6b7280;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.accordion-header:hover .accordion-icon {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.accordion-header.active .accordion-icon {
+  background: #2f2f2f;
+  color: #ffffff;
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+  background: #ffffff;
+}
+
+.accordion-content.active {
+  max-height: 5000px;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.accordion-content .article-content h3 {
+  color: #2f2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1.5rem 0 1rem 0;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+}
+
+.accordion-content .article-content h4 {
+  color: #2f2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 1.2rem 0 0.8rem 0;
+}
+
+.accordion-content .article-content h5 {
+  color: #2f2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1rem 0 0.6rem 0;
+}
+
+.accordion-content .article-content p {
+  color: #2f2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.accordion-content .article-content ul,
+.accordion-content .article-content ol {
+  color: #2f2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.accordion-content .article-content li {
+  margin-bottom: 0.4rem;
+}
+
+.accordion-content .article-content strong {
+  color: #1f2937;
+  font-weight: 700;
+}
+
+/* Responsive tasarım - Accordion */
+@media (max-width: 768px) {
+  .accordion-header {
+    padding: 1.2rem 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  
+  .accordion-header h2 {
+    font-size: 1.2rem;
+  }
+  
+  .accordion-header .article-meta {
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0;
+  }
+  
+  .accordion-icon {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    width: 28px;
+    height: 28px;
+    font-size: 1.1rem;
+  }
+  
+  .accordion-content.active {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+  }
+  
+  .accordion-content .article-content h3 {
+    font-size: 1.3rem;
+  }
+  
+  .accordion-content .article-content h4 {
+    font-size: 1.1rem;
+  }
+  
+  .accordion-content .article-content h5 {
+    font-size: 1rem;
+  }
+  
+  .accordion-content .article-content p,
+  .accordion-content .article-content ul,
+  .accordion-content .article-content ol {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .accordion-header {
+    padding: 1rem 1.2rem;
+  }
+  
+  .accordion-header h2 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+  
+  .accordion-header .article-meta {
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 0.85rem;
+  }
+  
+  .accordion-icon {
+    top: 1rem;
+    right: 1.2rem;
+    width: 26px;
+    height: 26px;
+    font-size: 1rem;
+  }
+  
+  .accordion-content.active {
+    padding: 0 1.2rem 1.2rem 1.2rem;
+  }
+  
+  .accordion-content .article-content h3 {
+    font-size: 1.2rem;
+  }
+  
+  .accordion-content .article-content h4 {
+    font-size: 1.05rem;
+  }
+  
+  .accordion-content .article-content p,
+  .accordion-content .article-content ul,
+  .accordion-content .article-content ol {
+    font-size: 0.95rem;
+  }
+}
+
+/* ===== TAM İÇERİKLİ MAKALE STİLLERİ ===== */
+.articles-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.full-article {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.article-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #f3f4f6;
+}
+
+.article-header h2 {
+  color: #2f2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  line-height: 1.3;
+}
+
+.full-article .article-meta {
+  display: flex;
+  gap: 2rem;
+  color: #666;
+  font-size: 1rem;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.full-article .article-meta span {
+  display: flex;
+  align-items: center;
+}
+
+.full-article .article-meta .author {
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.full-article .article-meta .author::before {
+  content: "✍️";
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.full-article .article-content h3 {
+  color: #2f2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem 0;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+}
+
+.full-article .article-content h4 {
+  color: #2f2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.8rem 0;
+}
+
+.full-article .article-content h5 {
+  color: #2f2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1.2rem 0 0.6rem 0;
+}
+
+.full-article .article-content p {
+  color: #2f2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+
+.full-article .article-content ul,
+.full-article .article-content ol {
+  color: #2f2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  padding-left: 2rem;
+}
+
+.full-article .article-content li {
+  margin-bottom: 0.5rem;
+}
+
+.full-article .article-content strong {
+  color: #1f2937;
+  font-weight: 700;
+}
+
+/* Responsive tasarım - Tam içerikli makaleler */
+@media (max-width: 768px) {
+  .full-article {
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .article-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .full-article .article-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .full-article .article-content h3 {
+    font-size: 1.4rem;
+  }
+  
+  .full-article .article-content h4 {
+    font-size: 1.2rem;
+  }
+  
+  .full-article .article-content h5 {
+    font-size: 1.05rem;
+  }
+  
+  .full-article .article-content p,
+  .full-article .article-content ul,
+  .full-article .article-content ol {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .full-article {
+    padding: 1.5rem;
+  }
+  
+  .article-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  
+  .article-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .full-article .article-content h3 {
+    font-size: 1.3rem;
+  }
+  
+  .full-article .article-content h4 {
+    font-size: 1.1rem;
+  }
+  
+  .full-article .article-content p,
+  .full-article .article-content ul,
+  .full-article .article-content ol {
+    font-size: 0.95rem;
+  }
+}

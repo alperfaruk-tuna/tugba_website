@@ -24,6 +24,43 @@
 
   setTimeout(() => typeLetters(0), startDelayMs);
 })();
+
+// Accordion toggle fonksiyonu
+function toggleAccordion(header) {
+  const accordionItem = header.parentElement;
+  const content = accordionItem.querySelector('.accordion-content');
+  const icon = header.querySelector('.accordion-icon');
+  
+  // Diğer tüm accordion'ları kapat
+  const allAccordions = document.querySelectorAll('.accordion-item');
+  allAccordions.forEach(item => {
+    if (item !== accordionItem) {
+      const otherContent = item.querySelector('.accordion-content');
+      const otherHeader = item.querySelector('.accordion-header');
+      const otherIcon = item.querySelector('.accordion-icon');
+      
+      otherContent.classList.remove('active');
+      otherHeader.classList.remove('active');
+      if (otherIcon) {
+        otherIcon.textContent = '+';
+      }
+    }
+  });
+  
+  // Mevcut accordion'ı aç/kapat
+  const isActive = content.classList.contains('active');
+  
+  if (isActive) {
+    content.classList.remove('active');
+    header.classList.remove('active');
+    icon.textContent = '+';
+  } else {
+    content.classList.add('active');
+    header.classList.add('active');
+    icon.textContent = '−';
+  }
+}
+
 // Yıl bilgisini güncelle (eğer year elementi varsa)
 const date = new Date();
 const yearElement = document.getElementById("year");

@@ -1,0 +1,89 @@
+﻿MURİS MUVAZASI NEDİR?
+
+Muris muvazaası, muvazaanın miras hukukundaki özel bir görünümüdür. Kanunda açıkça düzenlenmemiş olup Yargıtay içtihatlarıyla şekillenmiş hukuki bir kurumdur. Özellikle Yargıtay’ın 01.04.1974 tarihli ve 1/2 sayılı İçtihadı Birleştirme Kararı sonrasında sistematik bir uygulama alanı bulmuştur. Söz konusu içtihat, özellikle kız çocuklarının miras haklarının korunması amacıyla geliştirilmiştir.
+Muris muvazaasını doğru anlayabilmek için öncelikle muvazaa kavramının ne olduğunu açıklamak gerekir.
+ Muvazaa nedir?
+Muvazaa; tarafların, üçüncü kişileri aldatmak amacıyla görünürde bir hukuki işlem yapmaları, ancak gerçekte bu işlemden farklı bir hukuki ilişkiyi amaçlamaları ya da aralarında gerçekte hiçbir hukuki ilişkinin bulunmaması hâlidir.
+Muvazaa üç temel unsurdan oluşur:
+1. Taraflar arasında görünürde bir hukuki işlem bulunmalıdır.
+2. Görünürdeki işlemden farklı bir gizli işlem olmalı veya gerçekte hiçbir işlem bulunmamalıdır.
+3. İşlem, üçüncü kişileri aldatma amacı taşımalıdır.
+Muris Muvazaası Nedir ? Unsurları Nelerdir?
+Muris muvazaası; mirasbırakanın, mirasçılardan mal kaçırmak amacıyla, mirasçılardan birine veya üçüncü kişiye yaptığı karşılıksız kazandırmaları, tapuda satış ya da ölünceye kadar bakma sözleşmesi gibi göstererek devretmesidir.
+Muris Muvazaasının Unsurları
+1. Mirasbırakanın, kendisine ait tapulu taşınmazı, tapuda satış veya ölünceye kadar bakma sözleşmesi şeklinde bedel almaksızın devretmesi,
+2. Devredilen taşınmazın tapuya kayıtlı olması ve işlemin tapuda yapılması,
+3. Mirasbırakanın mirasçılardan mal kaçırma kastı ile hareket etmesi,
+4. Muris muvazaasından kaynaklı tapu iptal ve tescil davasının açılabilmesi için mirasbırakanın ölmüş olması gerekir.
+Muvazaanın Varlığını Gösteren Bazı Belirtiler
+· Mirasbırakanın, kendisine daha yakın veya olumlu yaklaşan kişilere temlikte bulunması,
+· İkinci veya son eşin etkisi,
+· Erkek çocuğun kız çocuğa üstün tutulması,
+· Tasarrufun ölümden çok kısa süre önce yapılmış olması.
+
+MİHNET DUYGUSU İLE TEMLİK
+Satış sözleşmelerinde esas olan, taşınmazın bir semen (bedel) karşılığında devredilmesidir. Ancak bu bedelin mutlaka para olması gerekmez; kimi hâllerde emek ve bakım da semen olarak kabul edilebilir.
+Muris muvazaasında esas alınan ölçüt, mirasbırakanın mal kaçırma kastıdır. Mirasbırakanın, kendisine uzun süre bakan veya emek veren kişiye bakım borcunun karşılığı olarak taşınmaz devretmesi, Yargıtay uygulamasında “mihnet borcu” kapsamında değerlendirilmekte olup, bu durumda muris muvazaasından söz edilmez.
+
+MURİS MUVAZASINA KONU OLABİLECEK İŞLEMLER
+
+1- Satış Sözleşmesi Yoluyla Temlik
+Uygulamada muris muvazaasının en sık rastlanan türüdür. Mirasbırakan, taşınmazını görünüşte satış yoluyla devrederken gerçekte bağışlama amacı taşımaktadır.
+Bu durumda:
+· Görünürdeki satış işlemi muvazaa nedeniyle geçersiz,
+· Gizli bağış işlemi ise şekil şartlarına aykırı olduğu için geçersizdir.
+Sonuç olarak taşınmaz, terekeye geri dönecektir.
+Yargıtay’a göre muvazaanın varlığını gösteren kriterler şunlardır:
+· Ülke ve yörenin gelenek ve görenekleri,
+· Toplumsal eğilimler,
+· Olayların olağan akışı,
+· Mirasbırakanın sözleşme yapmakta haklı ve makul bir sebebinin bulunup bulunmadığı,
+· Davalının ekonomik alım gücü,
+· Satış bedeli ile taşınmazın gerçek değeri arasındaki fark,
+· Taraflar arasındaki beşerî ilişkiler.
+
+2- Ölünceye Kadar Bakma Sözleşmesi Yoluyla Temlik
+Türk Borçlar Kanunu’nun 611 ve devamı maddelerinde düzenlenen ölünceye kadar bakma sözleşmeleri, TBK m. 612 ve TMK m. 545 uyarınca resmî şekilde yapılmalıdır. Resmî şekle uyulmayan sözleşmeler geçersizdir.
+Bakım borcu; bakım alacaklısına barınma, beslenme, giydirme, sağlık hizmetleri ve manevi destek sağlama yükümlülüklerini kapsar.
+Bu sözleşmenin muris muvazaasına konu olabilmesi için, bakım borcunun gerçeği yansıtmaması ve asıl amacın mirasçılardan mal kaçırmak olması gerekir.
+Muvazaanın varlığını ispatta Yargıtay kriterleri şunlardır:
+· Sözleşme tarihinde murisin yaşı,
+· Murisin fiziki ve genel sağlık durumu,
+· Aile koşulları ve ilişkileri,
+· Elindeki mal varlığının miktarı, 
+· Sözleşme ile devredilen mal varlığının makul bir sınırda kalıp kalmadığıdır.
+
+3- Devrin Ara Malik Aracılığı ile Yapılması
+Muris tarafından taşınmazın, görünüşte üçüncü bir kişiye (ara malik) devredilmesi suretiyle yapılan temlik işlemidir. Bu tür muvazaada, taşınmazın ara malik adına tescil edilmesinden sonra, ara malik tarafından mirasçılardan birine yeniden devredilmesi yahut ara malikin taşınmazı fiilen hiç kullanmamasına rağmen, bağış yapılmak istenen kişinin taşınmazı kullanmaya devam etmesi gibi durumlar söz konusu olur. Bu hâllerde ara malik, murisin gerçek iradesini gizlemeye yönelik bir araç olarak kullanılmaktadır.
+Muvazaanın varlığını ispatta Yargıtay Kriterleri şunlardır:
+Ø Ülke ve yörenin gelenek ve görenekleri,
+Ø Toplumsal eğilimleri,
+Ø Olayların olağan akışı,
+Ø Mirasbırakanın sözleşme yapmakta haklı ve makul bir sebebinin bulunup bulunmaması,
+Ø Davalı yanın alım gücünün alım gücünün olup olmadığı,
+Ø Satış bedeli ile sözleşme tarihindeki gerçek değer arasındaki fark,
+Ø Taraflar ile mirasbırakan arasındaki beşeri ilişki.
+Ø Ara malik tarafından taşınmazın kullanılıp kullanılmadığı.
+
+4- Mahkeme Kararı ile Temlik
+Mirasbırakanın, gerçekte bağışlamak istediği taşınmazı, mirasçılardan mal kaçırma kastıyla haricen satış sözleşmesi yapılmış gibi göstererek bir mirasçıya devretmesi ve bu harici satış sözleşmesine dayanılarak söz konusu mirasçı tarafından mirasbırakan aleyhine tapu iptal ve tescil davası açılması şeklinde ortaya çıkan bir muvazaa görünümüdür.
+MURİS MUVAZASINA KONU OLMAYACAK İŞLEMLER
+·  Bağış işlemleri,
+·  Tapusuz taşınmazlar,
+·  Uzun süreli kira sözleşmeleri,
+·  Murisin bedelini ödediği ancak tescili mirasçı adına yaptırdığı hâller,
+·  Taşınır malların devri,
+·  Vasiyetnameler,
+·  Mal paylaşımı işlemleri.
+Muris Muvazaası Davasını Kimler Açabilir?
+Mirasçılık sıfatı devam eden tüm mirasçılar muris muvazaası davası açabilir.
+Görevli ve yetkili mahkeme hangisidir?
+Genel görevli mahkeme asliye hukuk mahkemesidir.
+Yetkili mahkeme; taşınmazın bulunduğu yer mahkemesidir.
+Zamanaşımı ve hak düşürücü süre var mı?
+Kural olarak muris muvazaası davalarında zamanaşımı veya hak düşürücü süre öngörülmemiştir. Ancak kadastrosu henüz yapılmamış olan bir taşınmazın, kadastrodan önce muris tarafından devredilmiş olması ve mirasbırakanın kadastrodan önce vefat etmesi hâlinde, taşınmazın kadastro tespiti sırasında devralan kişi adına tescil edilmesi durumunda, bu tescile karşı açılacak davalar bakımından 10 yıllık hak düşürücü süre uygulanır. Bununla birlikte, her hâlükârda dürüstlük kuralı gereğince muris muvazaası davasının makul süre içinde açılması gerekir.
+
+
+
+
+
