@@ -53,6 +53,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   </head>
   <body>
     <header>
@@ -87,11 +89,15 @@
     <div class="container">
       <h1>Kocaeli Avukat İletişim</h1>
       <h2>Bize Ulaşın</h2>
+      <!-- Mesaj alanı -->
+      <div id="form-message" style="display: none; padding: 15px; margin-bottom: 20px; border-radius: 5px;"></div>
       <form id="contactForm">
         <label for="name">Ad Soyad</label><br />
         <input type="text" id="name" name="name" required /><br /><br />
         <label for="email">E-posta</label><br />
         <input type="email" id="email" name="email" required /><br /><br />
+        <label for="phone">Telefon (İsteğe bağlı)</label><br />
+        <input type="tel" id="phone" name="phone" placeholder="0532 123 45 67" /><br /><br />
         <label for="message">Mesajınız</label><br />
         <textarea id="message" name="message" rows="5" required></textarea
         ><br /><br />

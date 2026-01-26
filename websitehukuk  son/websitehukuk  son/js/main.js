@@ -218,3 +218,103 @@ if (yearElement) {
     }
   });
 })();
+
+// EmailJS Entegrasyonu
+(function() {
+  // EmailJS'i başlat
+  emailjs.init("8IOl3yYuo90a1KmfZ");
+  
+  const contactForm = document.getElementById('contactForm');
+  const messageDiv = document.getElementById('form-message');
+  
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Form validasyonu
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      
+      if (!name || name.length < 2) {
+        showMessage('Lütfen geçerli bir ad soyad girin (en az 2 karakter).', 'error');
+        return;
+      }
+      
+      if (!email || !isValidEmail(email)) {
+        showMessage('Lütfen geçerli bir email adresi girin.', 'error');
+        return;
+      }
+      
+      if (!message || message.length < 10) {
+        showMessage('Lütfen mesajınızı detaylandırın (en az 10 karakter).', 'error');
+        return;
+      }
+      
+      // Form verilerini al
+      const formData = {
+        from_name: name,
+        from_email: email,
+        message: message,
+        phone: document.getElementById('phone') ? document.getElementById('phone').value.trim() || 'Belirtilmedi' : 'Belirtilmedi',
+        reply_to: email
+      };
+      
+      // Gönder butonunu devre dışı bırak
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Gönderiliyor...';
+      submitBtn.disabled = true;
+      
+      // EmailJS ile email gönder
+      emailjs.send(
+        'service_6ouhjfo',    // Service ID
+        'template_cyy4lkm',   // Template ID
+        formData
+      )
+      .then(function(response) {
+        // Başarılı
+        showMessage('Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.', 'success');
+        contactForm.reset();
+      })
+      .catch(function(error) {
+        // Hata
+        console.error('EmailJS Error:', error);
+        showMessage('Mesaj gönderilirken bir hata oluştu. Lütfen tekrar deneyin veya doğrudan email gönderin.', 'error');
+      })
+      .finally(function() {
+        // Gönder butonunu tekrar aktif et
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      });
+    });
+  }
+  
+  // Email validasyon fonksiyonu
+  function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+  
+  function showMessage(text, type) {
+    if (messageDiv) {
+      messageDiv.textContent = text;
+      messageDiv.style.display = 'block';
+      
+      if (type === 'success') {
+        messageDiv.style.backgroundColor = '#d4edda';
+        messageDiv.style.color = '#155724';
+        messageDiv.style.border = '1px solid #c3e6cb';
+      } else {
+        messageDiv.style.backgroundColor = '#f8d7da';
+        messageDiv.style.color = '#721c24';
+        messageDiv.style.border = '1px solid #f5c6cb';
+      }
+      
+      // 5 saniye sonra mesajı gizle
+      setTimeout(() => {
+        messageDiv.style.display = 'none';
+      }, 5000);
+    }
+  }
+})();
